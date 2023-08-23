@@ -1,0 +1,17 @@
+/* Headings and Text Styles for CSS styles */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+    color: #666;
+}
+
+p {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Add more styles as needed */
