@@ -15,3 +15,21 @@ p {
 }
 
 /* Add more styles as needed */
+/* CSS styles for specific elements using classes */
+.dashboard-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.weather-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.temperature, .humidity, .weather-description {
+    font-size: 18px;
+    color: #444;
+}
+
