@@ -1,0 +1,35 @@
+/* Headings and Text Styles for CSS styles */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+    color: #666;
+}
+
+p {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Add more styles as needed */
+/* CSS styles for specific elements using classes */
+.dashboard-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.weather-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.temperature, .humidity, .weather-description {
+    font-size: 18px;
+    color: #444;
+}
+
