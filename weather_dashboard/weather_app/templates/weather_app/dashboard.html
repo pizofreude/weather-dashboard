@@ -18,6 +18,14 @@
     </div>
 
     <!-- Add more content here as needed -->
+    <div class="city-input">
+        <form method="GET" action="{% url 'weather_dashboard' %}">
+            <label for="city">Enter City:</label>
+            <input type="text" id="city" name="city" placeholder="City name">
+            <button type="submit">Get Weather</button>
+        </form>
+    </div>
+    
 
 </body>
 </html>
