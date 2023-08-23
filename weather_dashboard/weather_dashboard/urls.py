@@ -20,5 +20,5 @@ from weather_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('weather', include('weather_app.urls')),   #include weather_apps's URLs
+    path('weather/', include('weather_app.urls')),   #include weather_apps's URLs
 ]
