@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="{% static 'weather_app/styles.css' %}">
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+
+    <div>
+        <h2>Current Weather in Hamburg, Germany</h2>
+        <p>Temperature: {{ weather_data.main.temp }}°C</p>
+        <p>Humidity: {{ weather_data.main.humidity }}%</p>
+        <p>Weather Description: {{ weather_data.weather.0.description }}</p>
+    </div>
+
+    <!-- Add more content here as needed -->
+
+</body>
+</html>
