@@ -7,7 +7,8 @@ from .weather_fetcher import fetch_weather_data
 
 def weather_dashboard(request):
     # Replace 'Hamburg,DE' with the city you want to display weather data for.
-    weather_data = fetch_weather_data('Hamburg,DE')
+    city = request.GET.get('city', 'Hamburg,DE')  # Default to Hamburg, Germany
+    weather_data = fetch_weather_data(city)
 
     context = {
         'weather_data': weather_data,
