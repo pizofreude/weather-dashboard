@@ -12,6 +12,7 @@ def weather_dashboard(request):
 
     context = {
         'weather_data': weather_data,
+        'city': city, # Pass the 'city' variable to the template.
     }
 
     return render(request, 'weather_app/dashboard.html', context)
