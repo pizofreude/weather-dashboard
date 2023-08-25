@@ -33,3 +33,9 @@ p {
     color: #444;
 }
 
+/* Add styles for error message */
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
