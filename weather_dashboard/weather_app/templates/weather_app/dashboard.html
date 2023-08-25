@@ -11,7 +11,8 @@
     <h1 class="dashboard-title">Weather Dashboard</h1>
 
     <div class="weather-info">
-        <h2>Current Weather in Hamburg, Germany</h2>
+        <!-- <h2>Current Weather in Hamburg, Germany</h2> -->
+        <h2>Current Weather in {{ city }}, {{ weather_data.sys.country }}</h2>
         <p class="temperature">Temperature: {{ weather_data.main.temp }}°C</p>
         <p class="humidity">Humidity: {{ weather_data.main.humidity }}%</p>
         <p class="weather-description">Weather Description: {{ weather_data.weather.0.description }}</p>
