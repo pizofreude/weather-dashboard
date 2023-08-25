@@ -8,10 +8,12 @@ from requests.exceptions import RequestException    # Handling errors
 
 
 def weather_dashboard(request):
+    # Replace 'Hamburg,DE' with the city you want to display weather data for.
+    city = request.GET.get('city', 'Hamburg,DE')  # Default to Hamburg, Germany
     error_message = None    # Default error message is None
+
     try:
-        # Replace 'Hamburg,DE' with the city you want to display weather data for.
-        city = request.GET.get('city', 'Hamburg,DE')  # Default to Hamburg, Germany
+        # Attempt to fetch weather data
         weather_data = fetch_weather_data(city)
 
     except RequestException as e:
@@ -22,7 +24,7 @@ def weather_dashboard(request):
     context = {
         'weather_data': weather_data,
         'city': city, # Pass the 'city' variable to the template.
-        'error_message': error_message if 'error_message' in locals() else None,
+        'error_message': error_message,
     }
 
     return render(request, 'weather_app/dashboard.html', context)
