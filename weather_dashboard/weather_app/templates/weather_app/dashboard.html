@@ -26,6 +26,14 @@
             <button type="submit">Get Weather</button>
         </form>
     </div>
+
+    <!-- checks if error_message exists in the context, and if it does, it displays an error message div. -->
+    {% if error_message %}
+    <div class="error-message">
+        {{ error_message }}
+    </div>
+    {% endif %}
+
     
 
 </body>
