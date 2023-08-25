@@ -8,6 +8,7 @@ from requests.exceptions import RequestException    # Handling errors
 
 
 def weather_dashboard(request):
+    error_message = None    # Default error message is None
     try:
         # Replace 'Hamburg,DE' with the city you want to display weather data for.
         city = request.GET.get('city', 'Hamburg,DE')  # Default to Hamburg, Germany
