@@ -35,6 +35,32 @@ Before you get started, make sure you have the following installed:
 
 ### Installation
 
+IMPORTANT: Remember to create two config.py files:
+
+- Create a new file named config.py in your project directory (where settings.py is located).
+E.g. `~/weather-dashboard/weather_dashboard/weather_dashboard/config.py`
+
+And in the first config.py, define the SECRET_KEY like this:
+
+```bash
+MY_SECRET_KEY = 'your-secret-key-goes-here'
+```
+
+Replace `your-secret-key-goes-here` with your actual secret key.
+
+- Create a second config.py in your app directory where the `admin.py` and `apps.py` files located.
+E.g. `~/weather-dashboard/weather_dashboard/weather_app/config.py`
+
+And in the second config.py, define the OpenWeatherMap API key:
+
+```bash
+# config.py
+OPENWEATHERMAP_API_KEY = 'YOUR_API_KEY'
+```
+Replace `YOUR_API_KEY` accordingly.
+
+Add `config.py` into your `.gitignore`.
+
 1. Clone this repository to your local machine (or download it):
 
 ```bash
